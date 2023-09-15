@@ -1,4 +1,11 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
-  "recommendations": ["angular.ng-template"]
+  "recommendations": [
+    "angular.ng-template",
+    "dbaeumer.vscode-eslint",
+    "doggy8088.angular-extension-pack",
+    "johnpapa.angular2",
+    "pkief.material-icon-theme", //資料夾icon識別
+    "cyrilletuzi.angular-schematics"
+  ]
 }
