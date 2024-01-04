@@ -1,11 +1,9 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
   "recommendations": [
-    "angular.ng-template",
-    "dbaeumer.vscode-eslint",
-    "doggy8088.angular-extension-pack",
-    "johnpapa.angular2",
-    "pkief.material-icon-theme", //資料夾icon識別
-    "cyrilletuzi.angular-schematics"
+    "pkief.material-icon-theme", // File and folder icons
+    "oouo-diogo-perdigao.docthis", // JSDoc comments
+    "xabikos.javascriptsnippets", // JavaScript (ES6) snippets
+    "loiane.angular-extension-pack" // angular extension pack
   ]
 }
