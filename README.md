@@ -1,129 +1,126 @@
 # angular-boilerplate-standalone
 
 - [angular-boilerplate-standalone](#angular-boilerplate-standalone)
-  - [一、專案說明](#一專案說明)
-    - [特點](#特點)
-  - [二、專案環境和套件](#二專案環境和套件)
-    - [環境設置](#環境設置)
-    - [VScode Extension安裝](#vscode-extension安裝)
-  - [三、專案啟動](#三專案啟動)
-  - [四、專案Commit](#四專案commit)
-  - [五、指令](#五指令)
-  - [六、專案資料夾結構](#六專案資料夾結構)
+  - [I、Project Description](#iproject-description)
+    - [Features](#features)
+  - [II、Project Environment and Packages](#iiproject-environment-and-packages)
+    - [Environment Setup](#environment-setup)
+    - [VScode Extension Installation](#vscode-extension-installation)
+  - [III、Project Startup](#iiiproject-startup)
+  - [IV、Project Commit](#ivproject-commit)
+  - [V、Commands](#vcommands)
+  - [VI、 Project Folder Structure](#vi-project-folder-structure)
 
-## 一、專案說明
+## I、Project Description
 
-這是一個基於`Angular 16` 框架的模板專案，是以`Standalone`為架構; 搭配`Google`的[gts](https://github.com/google/gts)，對專案的程式碼和排版進行統一的規範和檢核。
+This is a template project based on the [Angular 16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d?gi=442df58f98ce) framework, structured as [Standalone](https://angular.io/guide/standalone-components) ; in conjunction with`Google`'s [gts](https://github.com/google/gts), it provides a unified standard and check for the project's code and formatting.
 
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
-### 特點
+### Features
 
-1. `Angular16`版本並使用`Standalone`架構
-2. 使用程式碼、提交訊息檢核和排版工具(`ESLint、Commitizen、Prettier`)
-3. 使用 [Google Code Style](https://github.com/google/gts)
-4. 搭配使用`VScode Extension`在檔案儲存時自動排版和Lint
-5. Commit時會進行程式語法檢核強制排版以確保每次提交都有一致性。
+1. [Commitizen](https://github.com/commitizen/cz-cli) and [Prettier](https://prettier.io/): Utilizes tools for code and commit message formatting.
+2. Uses [Google Code Style](https://github.com/google/gts)
+3. [Commitlint](https://github.com/conventional-changelog/commitlint) and [ESlint](https://eslint.org/): During commit, syntax checks and enforced formatting are performed to ensure consistency in each submission.
+4. Complemented with the use of VScode Extension for automatic formatting and Linting upon file saving.
 
-## 二、專案環境和套件
+## II、Project Environment and Packages
 
-### 環境設置
+### Environment Setup
 
-| 檔案                                         | 版本                 |
+| tools                                        | version              |
 | -------------------------------------------- | -------------------- |
-| [Node.js](https://nodejs.org/zh-tw/download) | ^16.14.0 或 ^18.10.0 |
-| [git](https://git-scm.com/downloads)         | 不限                 |
-| [Angular cli](https://angular.io/cli)        | 16版                 |
+| [Node.js](https://nodejs.org/zh-tw/download) | ^16.14.0 or ^18.10.0 |
+| [git](https://git-scm.com/downloads)         | LTS                  |
+| [Angular cli](https://angular.io/cli)        | ^16.1.0              |
 
-### VScode Extension安裝
+### VScode Extension Installation
 
-![image-1](./src/assets/pic-1.png)
-請在`EXTENSIONS`內搜尋`@recommended`(如上圖)，會看到推薦安裝的Extensions，請全部安裝下來。
+![image-1](./src/assets/pic-1.png)  
+Search for `@recommended` within `EXTENSIONS` (as shown in the image above), and you will see the Extensions recommended for installation. Please install all of them.
 
-## 三、專案啟動
+## III、Project Startup
 
-輸入以下指令，進行套件安裝
+Enter the following command to install the packages:
 
 ```bash
 npm install
 ```
 
-待安裝完套件後輸入以下指令來啟動專案
+After the packages are installed, enter the following command to start the project:
 
 ```bash
 ng serve
 ```
 
-## 四、專案Commit
+## IV、Project Commit
 
-請輸入以下指令，以便呼叫出Commitizen工具協助進行Commit訊息的撰寫
+Enter the following command to invoke the `Commitizen` tool to assist in writing commit messages:
 
 ```bash
 npm run commit
 ```
 
-## 五、指令
+## V、Commands
 
-- `ng serve` - 啟動開發服務器。
-- `ng build` - 產生打包。
-- `npm test` - 運行單元測試。
-- `npm run lint` - 執行程式碼檢查。
-- `npm run commit`- 使用 Commitizen 提交變更。
+- `ng serve` - Start the development server.
+- `ng build` - Generate the build package.
+- `ng test` - Run unit tests.
+- `npm run lint` - Execute code checks.
+- `npm run commit`- Use Commitizen to submit changes.
 
-## 六、專案資料夾結構
+## VI、 Project Folder Structure
 
 ```text
-🔸 表示當前專案沒有該檔案，在此列出是為了顯示結構，可以依照需求自行新增。
 
 - 📂 angular-boilerplate-standalone
   - 📂 .angular
-  - 📂 .vscode (vscode設定)
-  - 📂 .husky (husky設定)
+  - 📂 .vscode (VSCode Settings)
+  - 📂 .husky (Husky Configuration)
   - 📂 e2e
-  - 📂 node_modules (引用套件)
+  - 📂 node_modules (Dependencies)
   - 📂 src
       - 📂 app
-          - 📂 core（共用工具模組)
-               - 📂 enums (列舉宣告)
+          - 📂 core (Shared Utility Modules)
+               - 📂 enums (Enumeration Declarations)
                    - 📄 common.enum.ts
-               - 📂 guards (路由守衛)
-               - 📂 utils （輔助工具）
+               - 📂 guards (Route Guards)
+               - 📂 utils (Helper Tools)
                    - 📄 common-utils.ts
-               - 📂 consts (常數宣告)
+               - 📂 consts (Constant Declarations)
                    - 📄 common.consts.ts
-               - 📂 models (通用資料模型)
-                   - 📄 a.model.ts 🔸
-                   - 📄 b.model.ts 🔸
-               - 📂 services (通用服務: 如Storage)
-               - 📂 validators (驗證器) 🔸
-
+               - 📂 models (Common Data Models)
+                   - 📄 a.model.ts
+                   - 📄 b.model.ts
+               - 📂 services (Common Services: e.g., Storage)
+               - 📂 validators (Validators)
                - 📂 interceptors
-          - 📂 features（各功能模組）
-               - 📂 feature-a 🔸
+          - 📂 features (Feature Modules)
+               - 📂 feature-a
                     - 📄 feature-a.component.html
                     - 📄 feature-a.component.scss
                     - 📄 feature-a.component.ts
                     - 📄 feature-a.component.spec.ts
-                    - 📂 models(該功能會使用到的資料模型）
-          - 📂 shared (共用元件)
-               - 📂 components（共用元件，例:dialog、toast）
+                    - 📂 models (Data Models used by the feature)
+          - 📂 shared (Shared Components)
+               - 📂 components (Common Components, e.g., dialog, toast)
                - 📂 pipes
                - 📂 directives
-               - 📂 layout (畫面框架元件，例：header、navbar等)
+               - 📂 layout (Layout Components, e.g., header, navbar)
           - 📄 app.component.html
           - 📄 app.component.scss
           - 📄 app.component.ts
           - 📄 app.module.ts
           - 📄 app.routing-module.ts
-     - 📂 assets(靜態資源)
-         - 📂 images (圖片)
-         - 📂 data (API假資料) 🔸
-         - 📂 scripts (外部js) 🔸
+     - 📂 assets (Static Resources)
+         - 📂 images (Images)
+         - 📂 data (Mock API Data)
+         - 📂 scripts (External JS)
          - 📂 icons 🔸
-     - 📂 styles(樣式檔案）
-          - 📄 _custom.scss 🔸（外部套件樣式）
+     - 📂 styles (Style Files)
+          - 📄 _custom.scss 🔸 (Styles for External Packages)
           - 📄 styles.scss
-     - 📂 environments(環境變數)
+     - 📂 environments (Environment Variables)
           - 📄 environment.ts
           - 📄 environment.prod.ts
      - 📄 index.html
